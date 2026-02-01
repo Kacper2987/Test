@@ -30,20 +30,53 @@
 
 <section class="section">
   <h2>Kontakt</h2>
+
   <form id="contactForm">
-    <input type="text" placeholder="Imię i nazwisko" required>
-    <input type="email" placeholder="Email" required>
-    <textarea rows="5" placeholder="Wiadomość" required></textarea>
+
+    <input 
+      type="text" 
+      name="name"
+      placeholder="Imię i nazwisko" 
+      required
+    >
+
+    <div class="phone-field">
+      <span class="phone-prefix"></span>
+      <input 
+        type="tel"
+        name="phone"
+        placeholder="Numer telefonu"
+        required
+      >
+    </div>
+
+    <input 
+      type="email"
+      name="email"
+      placeholder="Email" 
+      required
+    >
+
+    <textarea 
+      name="message"
+      rows="5"
+      placeholder="Wiadomość" 
+      required
+    ></textarea>
+
     <button type="submit">Wyślij</button>
+
   </form>
 </section>
 
-<script>
-document.getElementById("contactForm").addEventListener("submit", e => {
-  e.preventDefault();
-  alert("Wiadomość wysłana!");
-});
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
+<script>
+  emailjs.init("co4AoY8-owr4k0ZRf");
 </script>
+
+<!-- logika wysyłki -->
+<script src="email.js"></script>
 </body>
 </html>
