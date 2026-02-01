@@ -1,3 +1,6 @@
+
+
+
 //const images = [
  // "https://via.placeholder.com/1200x800",
  // "https://via.placeholder.com/1201x801",
@@ -77,3 +80,13 @@ lightbox.addEventListener("click", () => {
   lightboxImg.src = "";
   document.body.style.overflow = "auto";
 });
+
+
+
+
+
+
+
+
+
+
