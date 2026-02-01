@@ -1,5 +1,7 @@
 
 
+
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -33,20 +35,13 @@ h1, h2 {
   font-family: 'Playfair Display', serif;
 }
 
-nav a:hover {
-  opacity: 0.7;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
 nav {
   background: #111;
   padding: 10px 20px;
   position: sticky;
   top: 0;
   z-index: 200;
+  
 }
 
 nav a {
@@ -55,23 +50,30 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   position: relative;
+  padding-bottom: 8px;
+  box-sizing: border-box;
 }
 
 nav a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: 0;
   width: 0;
   height: 2px;
   background: #fff;
   transition: width 0.3s ease;
 }
 
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
 .section {
   padding: 80px 20px;
   animation: fadeUp 0.8s ease;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -240,9 +242,6 @@ form button {
   }
 }
 
-nav a.active {
-  border-bottom: 2px solid #fff;
-}
 
 .gallery img {
   cursor: pointer;
