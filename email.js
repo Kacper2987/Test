@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "SERVICE_ID_TUTAJ",
-      "TEMPLATE_ID_TUTAJ",
+      "service_9i771rj",
+      "template_abc",
       this
     )
     .then(() => {
