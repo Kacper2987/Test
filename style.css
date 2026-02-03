@@ -422,6 +422,129 @@ form button {
 
 
 
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* DWA WIDEO W WIERSZU */
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* na telefonie nadal 1 */
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.video-card {
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-cover {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-cover video {
+  width: 100%;
+  display: block;
+}
+
+/* przycisk play jak na lewyprofil */
+.play-btn {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 50px;
+  color: white;
+  background: rgba(0,0,0,0.35);
+
+  transition: .3s;
+}
+
+.video-cover:hover .play-btn {
+  background: rgba(0,0,0,0.55);
+}
+
+.video-cover video {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.play-btn {
+  pointer-events: none;   /* dokładnie jak u nich */
+}
+
+
+
+
+
+
+
+
+/* ===== ANIMACJA TAP PLAY/PAUSE ===== */
+
+.tap-indicator {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 72px;
+  color: white;
+
+  opacity: 0;
+  transform: scale(0.8);
+
+  pointer-events: none;
+}
+
+.tap-indicator.show {
+  animation: tapFlash .65s ease;
+}
+
+@keyframes tapFlash {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero {
   background:
     radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 60%),
