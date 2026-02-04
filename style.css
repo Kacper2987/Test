@@ -56,6 +56,60 @@
 
 
 
+
+
+
+
+/* STRZAŁKI LIGHTBOX */
+
+.lb-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+  padding: 20px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.lb-arrow:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.lb-prev { left: 10px; }
+.lb-next { right: 10px; }
+
+/* licznik 3 / 40 */
+.lb-counter {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ===== FOOTER ===== */
 
 .footer {
@@ -854,5 +908,3 @@ form button {
   padding: 14px 30px;
   letter-spacing: 1px;
 }
-
-
