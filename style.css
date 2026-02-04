@@ -854,3 +854,20 @@ form button {
   padding: 14px 30px;
   letter-spacing: 1px;
 }
+
+
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);   /* dokładnie 3 kolumny */
+  gap: 15px;
+}
+
+/* na telefonie tylko 1 kolumna */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
