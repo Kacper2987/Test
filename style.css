@@ -861,11 +861,11 @@ form button {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);   /* dokładnie 3 kolumny */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 15px;
 }
 
-/* na telefonie tylko 1 kolumna */
+/* tylko galeria reaguje na mobile */
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: 1fr;
