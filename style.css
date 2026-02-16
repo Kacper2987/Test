@@ -359,11 +359,45 @@ nav a.active::after {
   padding: 120px 20px;
 }
 
+
+
+
+
+
+/* ===== UKŁAD JAK NA  ===== */
+
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);   /* dokładnie 3 kolumny */
-  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);   /* 2 kolumny jak na screenie */
+  gap: 12px;
 }
+
+/* zwykłe zdjęcie = 1 kolumna */
+.gallery img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+/* zdjęcie poziome na pełną szerokość */
+.gallery img.wide {
+  grid-column: 1 / -1;   /* zajmuje 2 kolumny */
+}
+
+/* telefon = 1 kolumna */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img.wide {
+    grid-column: auto;
+  }
+}
+
+
+
+
 
 /* na telefonie tylko 1 kolumna */
 @media (max-width: 768px) {
