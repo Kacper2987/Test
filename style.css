@@ -942,3 +942,137 @@ form button {
   padding: 14px 30px;
   letter-spacing: 1px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== GALERIA – NAGŁÓWEK  ===== */
+
+.gallery-header {
+  text-align: left;
+  margin-bottom: 70px;
+  animation: fadeUp 0.9s ease both;
+}
+
+.gallery-subtitle {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.gallery-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.gallery-meta {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .gallery-title {
+    font-size: 36px;
+  }
+}
+
+.gallery-line {
+  display: block;
+  width: 160px;
+  height: 2px;
+  background: #111;
+  margin-top: 22px;
+}
+
+
+
+
+
+
+
+.container {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio-hero {
+  max-width: 720px;
+  margin-bottom: 70px;
+  animation: fadeUp 0.9s ease both;
+}
+
+.portfolio-hero-subtitle {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.portfolio-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.portfolio-hero-note {
+  margin-top: 18px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #999;
+  opacity: 0.8;
+}
+
+.portfolio-hero-line {
+  display: block;
+  width: 140px;
+  height: 2px;
+  background: #111;
+  margin-top: 24px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .portfolio-hero-title {
+    font-size: 36px;
+  }
+
+  .portfolio-hero {
+    text-align: left;
+  }
+}
