@@ -1076,3 +1076,84 @@ form button {
     text-align: left;
   }
 }
+
+
+
+
+
+.extras-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* prawa kolumna */
+.extras-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.extra-item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.extra-item:last-child {
+  border-bottom: none;
+}
+
+.extra-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.extra-item p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.extra-price {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 8px 0;
+  color: #000;
+}
+
+.extra-note {
+  font-size: 13px;
+  color: #888;
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .extras-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+
+
+
+
+.hero-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px; /* kontroluje odstęp między logo a napisem */
+}
+
+.hero-logo img {
+  max-width: 420px;   /* kontroluje wielkość logo */
+  width: 90%;
+  height: auto;
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.5));
+  
+}
+.hero-logo h1 {
+  margin-top: 0;
+}
