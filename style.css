@@ -32,9 +32,9 @@
 }
 
 .faq-answer {
-  max-height: 0;
+  height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
+  transition: height 0.45s ease;
 }
 
 .faq-answer p {
@@ -44,9 +44,7 @@
 }
 
 /* aktywny element */
-.faq-item.active .faq-answer {
-  max-height: 300px;
-}
+
 
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
@@ -1237,4 +1235,52 @@ form button {
   width: 100%;
   opacity: 0.9;
   transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutFAQ {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ważne — obcina powiększony obraz */
+.aboutFAQ img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+
+   transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* kontener musi ukrywać nadmiar */
+.aboutFAQ {
+  overflow: hidden;
+}
+
+/* efekt hover */
+.aboutFAQ img:hover {
+  transform: scale(0.95);
 }
