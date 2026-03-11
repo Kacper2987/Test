@@ -1377,42 +1377,7 @@ body {
 
 
 
-@media (max-width: 768px){
 
-  .main-nav{
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 260px;
-    height: 100vh;
-    background: #0b0b0b;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-
-    transition: right 0.35s ease;
-    z-index: 999;
-  }
-
-  .main-nav a{
-    font-size: 18px;
-  }
-
-  /* kiedy menu jest otwarte */
-  .main-nav.active{
-    right: 0;
-  }
-
-  /* hamburger */
-  .menu-toggle{
-    position: relative;
-    z-index: 1000;
-  }
-
-}
 
 
 
