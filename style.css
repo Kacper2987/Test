@@ -1374,3 +1374,44 @@ body {
 }
 
 
+
+
+
+.menu-logo{
+  margin-bottom:40px;
+}
+
+.menu-logo img{
+  width:150px;
+  height:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-social{
+  margin-top:auto;
+  display:flex;
+  gap:18px;
+  padding-bottom:40px;
+}
+
+.menu-social img{
+  width:32px;
+  height:auto;
+  opacity:0.8;
+  transition:0.3s;
+}
+
+.menu-social img:hover{
+  opacity:1;
+}
