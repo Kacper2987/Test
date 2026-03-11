@@ -1328,7 +1328,7 @@ body {
 
 @media (max-width:768px){
 
-   .site-header{
+  .site-header{
     width:100%;
     height:60px;
     padding:15px;
@@ -1339,7 +1339,7 @@ body {
   .menu-toggle{
     display:block;
     color:white;
-    font-size:28px;
+    font-size:30px;
     cursor:pointer;
     z-index:10001;
   }
@@ -1354,9 +1354,10 @@ body {
 
     display:flex;
     flex-direction:column;
-    justify-content:center;
     align-items:center;
-    gap:25px;
+
+    padding-top:80px;
+    padding-bottom:40px;
 
     transition:left 0.35s ease;
     z-index:10000;
@@ -1364,6 +1365,10 @@ body {
 
   .site-header nav.active{
     left:0;
+  }
+
+  .site-header nav a{
+    font-size:18px;
   }
 
   body{
@@ -1382,7 +1387,7 @@ body {
 }
 
 .menu-logo img{
-  width:150px;
+  width:200px;
   height:auto;
 }
 
