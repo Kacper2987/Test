@@ -305,43 +305,7 @@ h1, h2 {
   font-family: 'Playfair Display', serif;
 }
 
-nav {
-  background: #111;
-  padding: 10px 20px;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-
-  z-index: 999;
-}
-
-nav a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 8px;
-  box-sizing: border-box;
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: width 0.3s ease;
-}
-
-nav a:hover::after,
-nav a.active::after {
-  width: 100%;
-}
 
 .section {
   padding: 80px 20px;
@@ -1147,7 +1111,7 @@ form button {
 }
 
 .footer-logo img {
-  max-width: 130px;
+  max-width: 170px;
   width: 100%;
   opacity: 0.9;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -1283,4 +1247,63 @@ form button {
 /* efekt hover */
 .aboutFAQ img:hover {
   transform: scale(0.95);
+}
+
+
+
+
+
+
+
+.site-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  background: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-header nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.site-header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 6px 0;
+  transition: 0.3s;
+}
+
+/* animowana kreska */
+.site-header nav a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -3px;
+  background: white;
+  transition: width 0.3s;
+}
+
+.site-header nav a:hover::after {
+  width: 100%;
+}
+
+.site-header nav a.active::after {
+  width: 100%;
+}
+
+
+body {
+  margin-left: 220px;
 }
