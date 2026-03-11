@@ -1267,8 +1267,7 @@ form button {
   align-items: center;
   z-index: 1000;
   
-   transition: transform 0.3s ease;
-}
+  
 }
 
 .site-header nav {
