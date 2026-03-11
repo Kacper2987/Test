@@ -1342,21 +1342,26 @@ body {
   }
 
  .site-header nav{
-  display:none;
-  flex-direction:column;
-  gap:20px;
-  padding:20px;
-  position:absolute;
-  top:60px;
-  left:0;
-  width:100%;
+  position:fixed;
+  top:0;
+  right:-260px;
+  width:260px;
+  height:100vh;
   background:#0f0f0f;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+
+  transition:right 0.35s ease;
   z-index:9999;
 }
 
   .site-header nav.active{
-    display:flex;
-  }
+  right:0;
+}
 
   body{
     margin-left:0;
