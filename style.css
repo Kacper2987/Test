@@ -1266,6 +1266,9 @@ form button {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  
+   transition: transform 0.3s ease;
+}
 }
 
 .site-header nav {
@@ -1344,7 +1347,7 @@ body {
  .site-header nav{
   position:fixed;
   top:0;
-  right:-260px;
+  left:-260px;
   width:260px;
   height:100vh;
   background:#0f0f0f;
@@ -1355,12 +1358,12 @@ body {
   align-items:center;
   gap:25px;
 
-  transition:right 0.35s ease;
+  transition:left 0.35s ease;
   z-index:9999;
 }
 
-  .site-header nav.active{
-  right:0;
+ .site-header nav.active{
+  left:0;
 }
 
   body{
