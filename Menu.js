@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", function(){
 
 const toggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".main-nav");
+const nav = document.querySelector(".site-header nav");
 
 toggle.addEventListener("click", () => {
 nav.classList.toggle("active");
 });
 
 });
-
 
 
