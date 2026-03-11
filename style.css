@@ -1255,7 +1255,17 @@ form button {
 
 
 
-
+.site-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  background: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .site-header nav {
   display: flex;
@@ -1380,5 +1390,46 @@ body {
 
 
 
+/* ===== MENU MOBILNE ===== */
 
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
 
+/* desktop */
+.main-nav {
+  display: flex;
+  gap: 30px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 260px;
+    height: 100vh;
+    background: #0b0b0b;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    transition: right 0.35s ease;
+    z-index: 999;
+  }
+
+  .main-nav.active {
+    right: 0;
+  }
+
+}
