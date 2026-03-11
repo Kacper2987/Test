@@ -1345,9 +1345,13 @@ body {
   display:none;
   flex-direction:column;
   gap:20px;
-  padding:20px 0;
-  position:relative;
-  z-index:1000;
+  padding:20px;
+  position:absolute;
+  top:60px;
+  left:0;
+  width:100%;
+  background:#0f0f0f;
+  z-index:9999;
 }
 
   .site-header nav.active{
