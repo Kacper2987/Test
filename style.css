@@ -1257,46 +1257,6 @@ form button {
 
 
 
-.site-header nav {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.site-header nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  letter-spacing: 1px;
-  position: relative;
-  padding: 6px 0;
-  transition: 0.3s;
-}
-
-/* animowana kreska */
-.site-header nav a::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 0%;
-  left: 0;
-  bottom: -3px;
-  background: white;
-  transition: width 0.3s;
-}
-
-.site-header nav a:hover::after {
-  width: 100%;
-}
-
-.site-header nav a.active::after {
-  width: 100%;
-}
-
-
-body {
-  margin-left: 220px;
-}
 
 
 
@@ -1310,69 +1270,8 @@ body {
 
 
 
-/* ===== SIDEBAR ===== */
 
-.site-header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 220px;
-  height: 100vh;
-  background: #0f0f0f;
-  padding-top: 80px;
-}
 
-.site-header nav {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  padding-left: 40px;
-}
-
-.site-header nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  letter-spacing: 1px;
-}
-
-.menu-toggle {
-  display: none;
-}
-
-/* ===== MOBILE ===== */
-
-@media (max-width: 768px){
-
-  .site-header{
-    width:100%;
-    height:auto;
-    padding:15px;
-  }
-
-  .menu-toggle{
-    display:block;
-    color:white;
-    font-size:26px;
-    cursor:pointer;
-  }
-
-  .site-header nav{
-    display:none;
-    flex-direction:column;
-    padding:20px 0;
-  }
-
-  .site-header nav.active{
-    display:flex;
-  }
-
-  body{
-    margin-left:0;
-    padding-top:70px;
-  }
-
-}
 
 
 
