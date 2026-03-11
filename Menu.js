@@ -1,8 +1,12 @@
-<script>
+document.addEventListener("DOMContentLoaded", function(){
+
 const toggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".site-header nav");
 
-toggle.onclick = () => {
-  nav.classList.toggle("active");
+if(toggle){
+  toggle.onclick = () => {
+    nav.classList.toggle("active");
+  }
 }
-</script>
+
+});

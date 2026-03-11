@@ -1255,17 +1255,7 @@ form button {
 
 
 
-.site-header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 220px;
-  height: 100vh;
-  background: #0f0f0f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .site-header nav {
   display: flex;
