@@ -588,24 +588,73 @@ form button {
 
 
 
+.hero{
+  height:100vh;
 
-
-
-
-
-
-
-
-
-
-.hero {
   background:
     radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 60%),
-    #0b0b0b;
-  color: #fff;
-  text-align: center;
-  padding: 130px 20px 60px;
+    url("TŁO.jpg");
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  color:#fff;
+  text-align:center;
+
+  animation: heroZoom 20s infinite alternate;
 }
+
+@keyframes heroZoom{
+  0%{
+    background-size:100%;
+  }
+  100%{
+    background-size:110%;
+  }
+}
+
+
+
+.hero-overlay{
+  text-align:center;
+  color:white;
+  background:rgba(0,0,0,0.7);
+  padding:50px 70px;
+  border-radius:12px;
+  backdrop-filter: blur(8px);
+}
+
+
+
+
+.socials{
+  margin-top:20px;
+}
+
+.socials img{
+  width:30px;
+  margin:0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hero h1 {
   font-size: 64px;
