@@ -1510,7 +1510,7 @@ body {
 
   background:
     linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-    url("tło-oferta.jpg");
+    url("tło oferta.png");
 
   background-size:cover;
   background-position:center;
@@ -1606,6 +1606,65 @@ body {
 
   .hero-divider{
     width:80px;
+    margin:14px auto;
+  }
+
+}
+
+
+
+
+
+
+
+.photo-fotobudka{
+  padding:100px 20px;
+
+  background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("tło fotobudka1.png");
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+  text-align:center;
+}
+
+.photo-fotobudka-line{
+  background:white;
+  margin:24px auto;
+}
+
+.photo-fotobudka-subtitle{
+  color:rgba(255,255,255,.8);
+}
+
+.photo-fotobudka-note{
+  color:rgba(255,255,255,.7);
+}
+
+
+
+@media (max-width:768px){
+
+  .photo-fotobudka{
+    padding:70px 15px;
+    background-position:center;
+  }
+
+  .photo-fotobudka-subtitle{
+    font-size:12px;
+    letter-spacing:2px;
+  }
+
+  .photo-fotobudka-note{
+    font-size:12px;
+  }
+
+  .photo-fotobudka-line{
+    width:80px;
+    height:1px;
     margin:14px auto;
   }
 
