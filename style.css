@@ -1500,3 +1500,113 @@ body {
 }
 
 
+
+
+/* ===== LOGO W NAGŁÓWKU OFERTY ===== */
+
+
+.photo-book{
+  padding:100px 20px;
+
+  background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("tło-oferta.jpg");
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+  text-align:center;
+}
+
+.photo-book-line{
+  background:white;
+  margin:24px auto;
+}
+
+.photo-book-subtitle{
+  color:rgba(255,255,255,.8);
+}
+
+.photo-book-note{
+  color:rgba(255,255,255,.7);
+}
+
+
+
+
+
+
+
+
+
+.hero-max{
+  display:inline-block;      /* dopasowuje szerokość do tekstu */
+
+  text-align:center;
+  color:white;
+  background:rgba(0,0,0,0.7);
+
+  padding:25px 40px;         /* trochę mniejszy padding */
+  border-radius:12px;
+
+  backdrop-filter: blur(8px);
+}
+
+
+
+.hero-divider{
+  display:block;
+  width:120px;
+  height:1px;
+  background:white;
+
+  margin:18px auto;
+}
+.portfolio-hero-max {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.portfolio-hero-min {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+
+@media (max-width:768px){
+
+  .photo-book{
+    padding:70px 15px;
+    background-position:center;
+  }
+
+  .hero-max{
+    padding:18px 22px;
+    border-radius:10px;
+  }
+
+  .portfolio-hero-max{
+    font-size:12px;
+    letter-spacing:2px;
+  }
+
+  .portfolio-hero-min{
+    font-size:26px;
+    line-height:1.2;
+  }
+
+  .hero-divider{
+    width:80px;
+    margin:14px auto;
+  }
+
+}
