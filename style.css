@@ -1437,6 +1437,18 @@ body {
     font-size:18px;
   }
 
+	.menu-social{
+  margin-top:auto;
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  padding-bottom:30px;
+}
+
+.menu-social img{
+  width:28px;
+}
+
   body{
     margin-left:0;
     padding-top:60px;
@@ -1488,16 +1500,3 @@ body {
 }
 
 
-@media (max-width:768px){
-
-  .menu-social{
-    justify-content:center;
-    gap:12px;
-    padding-bottom:20px;
-  }
-
-  .menu-social img{
-    width:30px;
-  }
-
-}
