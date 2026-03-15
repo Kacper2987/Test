@@ -633,16 +633,33 @@ form button {
 
 .socials{
   margin-top:20px;
+  display:flex;
+  justify-content:center;
+  gap:30px; /* odstęp między ikonami */
 }
 
 .socials img{
-  width:30px;
-  margin:0 10px;
+  width:50px;
 }
 
 
+@media (max-width: 768px){
 
+  .hero-overlay{
+    padding:30px 20px;
+  }
 
+  .socials{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+  }
+
+  .socials img{
+    width:30px;
+  }
+
+}
 
 
 
