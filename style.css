@@ -1486,3 +1486,18 @@ body {
 .menu-social img:hover{
   opacity:1;
 }
+
+
+@media (max-width:768px){
+
+  .menu-social{
+    justify-content:center;
+    gap:12px;
+    padding-bottom:20px;
+  }
+
+  .menu-social img{
+    width:30px;
+  }
+
+}
