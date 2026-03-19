@@ -1291,7 +1291,7 @@ form button {
 
 .aboutFAQ {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 300px 1fr;
   gap: 60px;
   align-items: center;
 }
@@ -1315,7 +1315,20 @@ form button {
   transform: scale(0.95);
 }
 
+@media (max-width: 768px) {
 
+  .aboutFAQ {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .aboutFAQ img {
+    width: 100%;
+    max-height: 300px;     /* żeby nie było ogromne */
+    object-fit: cover;
+  }
+
+}
 
 
 
@@ -1663,6 +1676,236 @@ body {
   }
 
   .photo-fotobudka-line{
+    width:80px;
+    height:1px;
+    margin:14px auto;
+  }
+
+}
+
+
+
+
+
+
+
+.photo-portfolio{
+  padding:100px 20px;
+
+  background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("Tło Portfolio.png");
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+  text-align:center;
+}
+
+.photo-portfolio-line{
+  background:white;
+  margin:24px auto;
+}
+
+.photo-portfolio-subtitle{
+  color:rgba(255,255,255,.8);
+}
+
+.photo-portfolio-note{
+  color:rgba(255,255,255,.7);
+}
+
+
+
+@media (max-width:768px){
+
+  .photo-portfolio{
+    padding:70px 15px;
+    background-position:center;
+  }
+
+  .photo-portfolio-subtitle{
+    font-size:12px;
+    letter-spacing:2px;
+  }
+
+  .photo-portfolio-note{
+    font-size:12px;
+  }
+
+  .photo-portfolio-line{
+    width:80px;
+    height:1px;
+    margin:14px auto;
+  }
+
+}
+
+
+
+
+
+
+.photo-tłofotobudka{
+  padding:100px 20px;
+
+  background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("tło fotobudka.png");
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+  text-align:center;
+}
+
+.photo-tłofotobudka-line{
+  background:white;
+  margin:24px auto;
+}
+
+.photo-tłofotobudka-subtitle{
+  color:rgba(255,255,255,.8);
+}
+
+.photo-tłofotobudka-note{
+  color:rgba(255,255,255,.7);
+}
+
+
+
+@media (max-width:768px){
+
+  .photo-tłofotobudka{
+    padding:70px 15px;
+    background-position:center;
+  }
+
+  .photo-tłofotobudka-subtitle{
+    font-size:12px;
+    letter-spacing:2px;
+  }
+
+  .photo-tłofotobudka-note{
+    font-size:12px;
+  }
+
+  .photo-tłofotobudka-line{
+    width:80px;
+    height:1px;
+    margin:14px auto;
+  }
+
+}
+
+
+
+
+
+.photo-faqs{
+  padding:100px 20px;
+
+  background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("Tło Faqs.png");
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+  text-align:center;
+}
+
+.photo-faqs-line{
+  background:white;
+  margin:24px auto;
+}
+
+.photo-faqs-subtitle{
+  color:rgba(255,255,255,.8);
+}
+
+.photo-faqs-note{
+  color:rgba(255,255,255,.7);
+}
+
+
+
+@media (max-width:768px){
+
+  .photo-faqs{
+    padding:70px 15px;
+    background-position:center;
+  }
+
+  .photo-faqs-subtitle{
+    font-size:12px;
+    letter-spacing:2px;
+  }
+
+  .photo-faqs-note{
+    font-size:12px;
+  }
+
+  .photo-faqs-line{
+    width:80px;
+    height:1px;
+    margin:14px auto;
+  }
+
+}
+
+
+
+
+.photo-kontakt{
+  padding:100px 20px;
+
+  background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("Tło kontakt.png");
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+  text-align:center;
+}
+
+.photo-kontakt-line{
+  background:white;
+  margin:24px auto;
+}
+
+.photo-kontakt-subtitle{
+  color:rgba(255,255,255,.8);
+}
+
+.photo-kontakt-note{
+  color:rgba(255,255,255,.7);
+}
+
+
+
+@media (max-width:768px){
+
+  .photo-kontakt{
+    padding:70px 15px;
+    background-position:center;
+  }
+
+  .photo-kontakt-subtitle{
+    font-size:12px;
+    letter-spacing:2px;
+  }
+
+  .photo-kontakt-note{
+    font-size:12px;
+  }
+
+  .photo-kontakt-line{
     width:80px;
     height:1px;
     margin:14px auto;
