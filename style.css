@@ -1963,6 +1963,7 @@ body {
   flex-direction:column;
   gap:15px;
   margin-top:20px;
+  margin-right: 20px;
 }
 
 .KontaktMax-overlay input,
@@ -2011,9 +2012,13 @@ body {
   }
 
   .KontaktMax-overlay{
-    padding:25px 30px;
+    padding:25px 15px;
     max-width:100%;
   }
+  
+  .KontaktMax-overlay form{
+  margin-right: 20px;
+}
 
   .KontaktMax-overlay input,
   .KontaktMax-overlay textarea{
