@@ -1924,7 +1924,8 @@ body {
 
 
 .KontaktMax{
-  height:100vh;
+  min-height:100vh;
+  padding:60px 20px;
 
   background:
     radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 60%),
@@ -1939,61 +1940,92 @@ body {
 
   color:#fff;
   text-align:center;
-
-  animation: KontaktMaxZoom infinite alternate;
-  
-  
 }
 
-@keyframes KontaktMaxZoom{
-  0%{
-    background-size:100%;
-  }
-  100%{
-    background-size:110%;
-  }
-}
-
-
-
+/* overlay */
 .KontaktMax-overlay{
   text-align:center;
   color:white;
   background:rgba(0,0,0,0.7);
-  padding:70px 90px;
+
+  padding:50px 60px;
   border-radius:12px;
+
   backdrop-filter: blur(8px);
+
+  width:100%;
+  max-width:500px;
 }
 
+/* FORMULARZ */
+.KontaktMax-overlay form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-top:20px;
+}
 
+.KontaktMax-overlay input,
+.KontaktMax-overlay textarea{
+  width:100%;
+  padding:14px;
+  border-radius:6px;
+  border:none;
+  font-size:16px;
+}
 
+/* BUTTON */
+.KontaktMax-overlay button{
+  margin-top:10px;
+  padding:14px;
+  background:#fff;
+  color:#000;
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.3s;
+}
 
+.KontaktMax-overlay button:hover{
+  background:#ddd;
+}
+
+/* SOCIALS */
 .socials{
   margin-top:20px;
   display:flex;
   justify-content:center;
-  gap:30px; /* odstęp między ikonami */
+  gap:25px;
+  flex-wrap:wrap;
 }
 
 .socials img{
-  width:50px;
+  width:45px;
 }
 
+/* ===== MOBILE ===== */
+@media (max-width:768px){
 
-@media (max-width: 768px){
+  .KontaktMax{
+    padding:40px 15px;
+  }
 
   .KontaktMax-overlay{
-    padding:30px 20px;
+    padding:25px 30px;
+    max-width:100%;
+  }
+
+  .KontaktMax-overlay input,
+  .KontaktMax-overlay textarea{
+    padding:12px;
   }
 
   .socials{
-    display:flex;
-    justify-content:center;
-    gap:30px;
+    gap:18px;
   }
 
   .socials img{
-    width:40px;
+    width:35px;
   }
 
 }
