@@ -2,12 +2,10 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Portfolio – Start</title>
-
+<title>Agnieszka & Marcin – Portfolio</title>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" sizes="32x32" href="LOGO.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -29,7 +27,6 @@
 
 <div class="menu-toggle">☰</div>
 
-
 <nav class="main-nav">
 
 	<div class="menu-logo">
@@ -38,15 +35,14 @@
   </a>
 </div>
 
-  <a href="index.html" class="active">Start</a>
+  <a href="index.html" >Start</a>
   <a href="offer.html">Oferta</a>
-  <a href="portfolio.html">Portfolio</a>
+  <a href="portfolio.html" class="active">Portfolio</a>
   <a href="Fotobudka.html">Fotobudka</a>
   <a href="faq.html">FAQ</a>
   <a href="contact.html">Kontakt</a>
   
-  
-<div class="menu-social">
+  <div class="menu-social">
 
 <a href="index.html" class="body-logo-link">
 <img src="LogoFacebook.png" alt="Facebook">
@@ -65,65 +61,54 @@
 </a>
 
 </div>
-
+  
 </nav>
 
 </header>
 
-<section class="hero">
-
-  <div class="hero-overlay">
-
-    <div class="index-logo">
-      <a href="index.html">
-        <img src="LogoStrona.png" alt="KacperPhoto logo">
-      </a>
-    </div>
-
-    <p class="hero-subtitle">Fotografia | Fotobudka 360°</p>
-
-    <a href="portfolio.html" class="hero-link">↓ Zobacz portfolio</a>
-
-    <div class="socials">
-      <a href="#"><img src="LogoFacebook.png"></a>
-      <a href="#"><img src="LogoInstagram.png"></a>
-      <a href="#"><img src="LogoYoutube.png"></a>
-      <a href="#"><img src="LogoTikTok.png"></a>
-    </div>
-
-  </div>
-
-</section>
-
-
-
 <section class="section">
- 
-  <div class="about">
-    <img src="LOGO.png" alt="Fotograf">
-    <div class="about-text">
-	  <p>
-			<section class="section">
-				<div class="section-header">
-					<h2>O mnie</h2>
-					<span></span>
-				</div>
-	  
-	  
-	  
-	  </p>
-      <p>Jestem fotografem z pasją.</p>
-      <p>
-        
-      </p>
-    </div>
+ <div class="gallery-header">
+  <span class="gallery-subtitle">Sesja plenerowa</span>
+  <h1 class="gallery-title">Justyna</h1>
+  <span class="gallery-line"></span>
+  <span class="gallery-meta">Stężyca 20.04.2025</span>
+  
+</div>
+
+  <div class="gallery">  
+	<img src="PatrykKomunia/1774113674_IMG_1889.jpg" alt="">
+    <img src="PatrykKomunia/1774113674_IMG_1887.jpg" alt="">
+	<img src="PatrykKomunia/1774113687_IMG_1903.jpg" class="wide" alt="">
+	
+   <img src="PatrykKomunia/1774113660_IMG_1873.jpg" alt="">
+   
+    <img src="PatrykKomunia/1774113687_IMG_1905.jpg" alt="">
+    
+    <img src="PatrykKomunia/1774113693_IMG_2143.jpg" class="wide" alt="">
+    <img src="PatrykKomunia/1774113693_IMG_2149.jpg" class="wide" alt="">
+    <img src="PatrykKomunia/1774113693_IMG_2150.jpg" class="wide" alt="">
+    <img src="PatrykKomunia/1774113698_IMG_2156.jpg" alt="">
+    <img src="PatrykKomunia/1774113698_IMG_2166.jpg" alt="">
+
+    <img src="PatrykKomunia/1774113704_IMG_2205.jpg" class="wide" alt="">
+    <img src="PatrykKomunia/1774113704_IMG_2206.jpg" class="wide" alt="">
+    <img src="PatrykKomunia/1774113704_IMG_2207.jpg" alt="">
+    <img src="PatrykKomunia/1774113709_IMG_2209.jpg" alt="">
+    <img src="PatrykKomunia/1774113709_IMG_2216.jpg" class="wide" alt="">
   </div>
 </section>
 
+<div id="lightbox">
 
+  <div class="lb-arrow lb-prev">❮</div>
 
-<!-- EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <img id="lightbox-img">
+
+  <div class="lb-arrow lb-next">❯</div>
+
+  <div class="lb-counter"></div>
+
+</div>
 
 <footer class="footer">
   <div class="footer-container">
@@ -183,16 +168,9 @@
   </div>
 </footer>
 
-<script>
-  emailjs.init("co4AoY8-owr4k0ZRf");
-</script>
-
-<!-- logika wysyłki -->
-<script src="email.js"></script>
-
+<script src="script.js"></script>
+<script src="lightbox.js"></script>
 <script src="Efekt.js"></script>
-
-
 <script src="Menu.js"></script>
 </body>
 </html>

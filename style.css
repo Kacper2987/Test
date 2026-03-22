@@ -2041,3 +2041,61 @@ body {
   padding: 60px 20px 20px;
   margin-top: 0px;
 }
+
+
+
+
+
+
+
+/* ===== PRZYCISK GŁÓWNY ===== */
+.btn-main {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 32px;
+
+  background: #111;
+  color: #fff;
+
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  border: 1px solid #111;
+  border-radius: 6px;
+
+  transition: all 0.3s ease;
+}
+
+/* hover */
+.btn-main:hover {
+  background: transparent;
+  color: #111;
+}
+
+.btn-center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .btn-main {
+    width: 100%;              /* pełna szerokość */
+    max-width: 320px;        /* żeby nie był za szeroki */
+    
+    text-align: center;
+    padding: 16px 20px;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .btn-center {
+    padding: 0 20px;         /* odstęp od krawędzi */
+    margin-top: 30px;
+  }
+}
