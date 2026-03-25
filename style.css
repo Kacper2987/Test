@@ -2099,3 +2099,135 @@ body {
     margin-top: 30px;
   }
 }
+
+
+
+
+
+
+
+
+.hero-index{
+  display:inline-block;      /* dopasowuje szerokość do tekstu */
+
+  text-align:center;
+  color:white;
+  background:rgba(0,0,0,0.7);
+
+  padding:25px 40px;         /* trochę mniejszy padding */
+  border-radius:12px;
+
+  backdrop-filter: blur(8px);
+}
+
+.photo-index{
+  padding:100px 20px;
+
+  background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("Ramka.png");
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+  text-align:center;
+  border-radius:12px;
+}
+
+@media (max-width:768px){
+
+  .photo-index{
+    padding:70px 15px;
+    background-position:center;
+  }
+}
+
+
+
+
+
+/* ===== FILTRY PORTFOLIO ===== */
+
+.portfolio-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  padding: 10px 18px;
+  border: 1px solid #111;
+  background: transparent;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.filter-btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+.filter-btn.active {
+  background: #111;
+  color: #fff;
+}
+
+.project {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+  .portfolio-filter {
+    flex-wrap: nowrap;          /* wszystko w jednej linii */
+    overflow-x: auto;           /* scroll poziomy */
+    gap: 10px;
+    padding-bottom: 10px;
+
+    /* ładny scroll */
+    scrollbar-width: none;
+  }
+
+  .portfolio-filter::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    flex: 0 0 auto;             /* żeby się nie rozciągały */
+    font-size: 12px;
+    padding: 8px 14px;
+    white-space: nowrap;        /* tekst w jednej linii */
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .portfolio-filter {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+
+
+.portfolio-columns {
+  display: flex;
+  gap: 40px; /* odstęp między kolumnami */
+  align-items: flex-start;
+}
+
+.portfolio-columns > * {
+  flex: 1; /* obie kolumny tej samej szerokości */
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 768px) {
+  .portfolio-columns {
+    flex-direction: column;
+  }
+}
