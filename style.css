@@ -2419,3 +2419,19 @@ body {
   }
 
 }
+
+
+
+.photo-portfoliooo{
+  padding:100px 20px;
+
+  background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("tło fotobudkaK.png");
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+  text-align:center;
+}
